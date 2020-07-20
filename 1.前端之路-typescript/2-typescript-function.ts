@@ -42,6 +42,13 @@ function func5(): Array<any> {
 }
 /**
  * function
+ * @return Array<any>
+ * */
+function func5_1(): Array<string> {
+  return ['1','2', '3']
+}
+/**
+ * function
  * @return Void
  * */
 function func6(): void {
@@ -114,9 +121,8 @@ console.log(func11)
 
 /**
  * 传递剩余参数
- * @param arg1
- * @param arg2
  * @return String
+ * @param num
  * */
 
 function getSum(...num: Array<number> ): number {
@@ -126,4 +132,16 @@ function getSum(...num: Array<number> ): number {
   }
   return result
 }
-console.log(func11)
+
+
+/**
+ * 函数重载
+ * @param arg1
+ * @param arg2
+ * @return String
+ * */
+
+/**
+ * 函数重载是类似java中的同一个函数   函数名相同，  参数不同  那么就是不同的函数  所以在实际的编程过程中 尽量避免相同的函数名出现
+ * */
+
